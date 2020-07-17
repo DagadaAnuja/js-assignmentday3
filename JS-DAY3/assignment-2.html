@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>
+        javascript
+        detecting the operating system of the user.
+    
+    </title>
+</head>
+<body style="text-align:center;" id="body">
+    <h1 style="color:green;">
+       </h1>
+    <p id="GFG_UP"
+       style="font-size: 19px;
+            font-weight: bold;">
+    </p>
+    <button onclick="GFG_Fun()">
+         clich here
+    </button>
+    <p id="GFG_DOWN"
+       style="color: green;
+              font-size: 24px;
+              font-weight: bold;">
+    </p>
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        el_up.innerHTML = "click on the button to get the OS of the user's system.";
+        var name = " unknown OS ";
+        if (navigator .userAgent.indexOf("win") != -1) Name = 
+           "windows OS";
+        if (navigator .userAgent.indexOf("mac") != -1) Name =
+            "macintosh";
+        if (navigator .userAgent.indexOf("linux") != -1) Name =
+            "linux OS";
+        if (navigator .userAgent.indexOf("android") != -1) Name =
+            "android OS";
+        if (navigator .userAgent.indexOf("win") != -1) Name =
+            "iOS";
+
+            
+        function GFG_Fun() {
+            el_down.innerHTML = Name;
+
+        }   
+
+    </script>
+</body>
+</html>
